@@ -1,0 +1,106 @@
+
+/* Smiley ghost shape */
+
+.ozh_css_smiley {
+    border-radius: 90% 0% 0% 90% / 50%;
+    box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    font-size: 80%;
+    height: 1.5em;
+    line-height: 1.3em;
+    text-align: center;
+    transform: rotate(100deg);
+    vertical-align: middle;
+    width: 1.5em;
+    font-family: "comic sans ms", arial, sans-serif;
+}
+
+.ozh_css_smiley.emotion_positive {
+    background: #ffb0da;
+    border: 1px solid #f886ec;
+}
+
+.ozh_css_smiley.emotion_negative {
+    background: #cdf264;
+    border: 1px solid #707070;
+}
+
+/* Smiley text */
+
+.ozh_css_smiley span {
+    display: inline-block;
+}
+
+.ozh_css_smiley.emotion_positive span {
+    color:red;
+    animation: sayyes 1s ease-in-out infinite alternate;
+    -o-animation: sayyes 1s ease-in-out infinite alternate;
+    -ms-animation: sayyes 1s ease-in-out infinite alternate;
+    -moz-animation: sayyes 1s ease-in-out infinite alternate;
+    -webkit-animation: sayyes 1s ease-in-out infinite alternate;
+}
+
+.ozh_css_smiley.emotion_negative span {
+    color:#98721b;
+    animation: sayno 1s ease-in-out infinite alternate;
+    -o-animation: sayno 1s ease-in-out infinite alternate;
+    -ms-animation: sayno 1s ease-in-out infinite alternate;
+    -moz-animation: sayno 1s ease-in-out infinite alternate;
+    -webkit-animation: sayno 1s ease-in-out infinite alternate;
+}
+
+/* Say yes animation */
+
+@keyframes sayyes {
+  0% {padding: 0 4px 0 0;}
+  100% {padding: 0 0 0 4px;}
+}
+
+@-moz-keyframes sayyes {
+  0% {padding: 0 4px 0 0;}
+  100% {padding: 0 0 0 2px;}
+}
+
+@-o-keyframes sayyes {
+  0% {padding: 0 4px 0 0;}
+  100% {padding: 0 0 0 4px;}
+}
+
+@-ms-keyframes sayyes {
+  0% {padding: 0 4px 0 0;}
+  100% {padding: 0 0 0 4px;}
+}
+
+
+@-webkit-keyframes sayyes {
+  0% {padding: 0 4px 0 0;}
+  100% {padding: 0 0 0 4px;}
+}
+
+/* Say no animation */
+
+@keyframes sayno {
+  0% {padding: 2px 0 0;}
+  100% {padding: 0 0 2px;}
+}
+
+@-moz-keyframes sayno {
+  0% {padding: 2px 0 0;}
+  100% {padding: 0 0 2px;}
+}
+
+@-o-keyframes sayno {
+  0% {padding: 2px 0 0;}
+  100% {padding: 0 0 2px;}
+}
+
+@-ms-keyframes sayno {
+  0% {padding: 2px 0 0;}
+  100% {padding: 0 0 2px;}
+}
+
+@-webkit-keyframes sayno {
+  0% {padding: 2px 0 0;}
+  100% {padding: 0 0 2px;}
+}
+
